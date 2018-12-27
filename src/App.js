@@ -36,6 +36,8 @@ class App extends Component {
             type="text"
             placeholder="Enter a name"
             onChange={this.handleChange}
+            value={name}
+            style={{ color: "black", textAlign: "center" }}
           />
           {name ? <HelloWorld name={name} /> : null}
         </header>
